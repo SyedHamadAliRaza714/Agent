@@ -6,9 +6,6 @@ An institutional-grade, AI-powered equity intelligence platform that leverages a
 
 FinAgent Pro transforms complex financial research into a seamless experience. By utilizing **CrewAI** and the lightning-fast **Groq** inference engine (Llama 3.1), the platform orchestrates a team of specialized AI agents. You simply type a natural language query (e.g., *"Analyze Tesla's performance last month"*), and the AI automatically fetches ticker data, scrapes the latest news, analyzes market sentiment, and synthesizes an actionable financial report.
 
-> **🎥 Watch it in Action!**
-> *[Drag and drop your MP4 demo video here!]*
-
 ## ✨ Key Features
 
 ### 🤖 Multi-Agent AI Architecture
@@ -47,27 +44,32 @@ Clone the repository:
 ```bash
 git clone [https://github.com/HamadAliRaza/FinAgent-Pro.git](https://github.com/HamadAliRaza/FinAgent-Pro.git)
 cd FinAgent-Pro
+```
 Install the required dependencies:
 
-Bash
+```Bash
 pip install crewai[tools] langchain-huggingface huggingface_hub yfinance beautifulsoup4 requests streamlit pandas litellm langchain-groq
+```
 Set your API key as an environment variable:
 
 Linux/Mac:
 
-Bash
+```Bash
 export GROQ_API_KEY="your_groq_api_key"
+```
 Windows (Command Prompt):
 
-DOS
+```DOS
 set GROQ_API_KEY="your_groq_api_key"
+```
 (Alternatively, you can create a .env file in the root directory and add your key there).
 
 Run the application:
 
-Bash
+```Bash
 streamlit run app.py
-📖 Usage
+```
+## 📖 Usage
 Launch the App: Open the Streamlit web URL provided in your terminal.
 
 Enter a Query: Use natural, human language in the search bar.
@@ -80,17 +82,18 @@ Wait for the Crew: Watch the spinner as the Orchestrator, Researcher, and Analys
 
 Review the Intelligence: Read the final institutional report, view the live stock metrics, and check the latest news pulse.
 
-📁 Project Structure
+## 📁 Project Structure
 Below is the organized directory layout for the FinAgent Pro application.
 
-Plaintext
+```Plaintext
 FinAgent-Pro/
 ├── app.py                      # Main Streamlit UI, CrewAI setup, and Tool definitions
 ├── requirements.txt            # Python dependencies list
 ├── FinAgent_Colab.ipynb        # Ready-to-run Jupyter Notebook for Colab deployment
 ├── .env                        # Environment variables (Add your GROQ_API_KEY here)
 └── README.md                   # Project documentation
-🎓 Learning Outcomes
+```
+## 🎓 Learning Outcomes
 This project demonstrates proficiency in:
 
 Multi-Agent Orchestration - Successfully building and delegating tasks to autonomous AI agents using the CrewAI framework.
@@ -101,7 +104,7 @@ Custom Tool Creation - Writing highly specific, error-handled Python classes (Ba
 
 Frontend Design - Transforming standard Streamlit components into a premium, responsive web dashboard using raw CSS injection.
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 Add a Charting Tool for the Research Agent to generate and display candlestick graphs.
 
 Integrate SEC Filings parsing (10-K, 10-Q) for deep fundamental analysis.
@@ -110,17 +113,15 @@ Allow users to input a portfolio of multiple stocks for a comparative multi-agen
 
 Export the final institutional report as a downloadable PDF.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Hamad Ali Raza
 
 GitHub: [@HamadAliRaza](https://github.com/SyedHamadAliRaza714)
 
-Project Link: [FinAgent Pro Repository](
+Project Link: [[FinAgent Pro Repository](https://github.com/SyedHamadAliRaza714/FinAgent-Pro-)(
 
-📄 License
+## 📄 License
 This project is open source and available under the MIT License.
 
 🙏 Acknowledgments
-Powered by Groq's blazing-fast inference API and the CrewAI multi-agent framework.
-
 Market data generously provided by Yahoo Finance.
